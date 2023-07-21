@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    height: 30px;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-radius: 5px ;
+    padding:5px ;
+    
+}
+select{
+    height: 30px;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border-radius: 5px ;
+    padding:5px ;
+    margin-top: 5px;
+}
+.Alarm-btn{
+
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    border: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+.colorWhite{
+    color:white;
+}
+/* --------------------body------------------------- */
+body{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)), url("../images/afternun.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/* --------------------whole Alarm clock body------------------------- */
+.alarm-clock-container{
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 350px;
+    transform:translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15% ;
+    border: 1px solid black;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alarm-clock-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* --------------------Show time details------------------------- */
+
+.time-details{
+    height: 90%;
+    width: 90%;
+}
+
+.show-time{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.alarm-details{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.Set-alarm-btn{
+    background-color: rgb(0, 123, 255);
+}
+.Set-alarm-btn:hover{
+    background-color:  rgb(5, 84, 168);;
+}
+/* --------------------Show Alarm details------------------------- */
+
+.alarm-details{
+    margin-top: 10px;
+}
+
+/* --------------------Show Alarm list------------------------- */
+#alarmlist{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+.delete-alarm-btn{
+    background-color: rgb(243, 60, 28);
+}
+.delete-alarm-btn:hover{
+    background-color:  rgb(204, 40, 11)
+}
+.alarm-list{
+    margin: 5px;
+}

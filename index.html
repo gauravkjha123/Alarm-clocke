@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <!-- alarm-clock container -->
+    <div class="alarm-clock-container">
+        <div class="time-details">
+            <div class="show-time colorWhite"> <span class="container-text"> 03:05:49</span></div>
+            <div class="alarm-details flex">
+                <div>
+                    <input id="hours" type="number" value="03" max="12" min="01">
+                    <input id="minuts" type="number" value="04" min="00" max="59">
+                    <input id="seconds" type="number" value="00" min="00" max="59">
+                    <select id="Meridiem">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div id="setalalarm" class="Alarm-btn colorWhite Set-alarm-btn">Set Alarm</div>
+            </div>
+            <div class="alarm-details">
+                <p class="colorWhite ">
+                    Alarms
+                </p>
+                    <!-- alarm-list container -->
+                <ul id="alarmlist"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js" ></script>
+</body>
+</html>
